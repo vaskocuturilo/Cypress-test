@@ -33,4 +33,12 @@ describe('Testing main page for http://test-engineer.online/', () => {
     .contains('$11,720.00')
   })
 
+  it('This is test for jd account', () => {
+    cy.login('jd', '2222','Jessica')
+    
+    cy.get('.balance__value')
+    .should('be.visible')
+    .contains('$11,720.00')
+  })
+
 })
