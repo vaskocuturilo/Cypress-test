@@ -3,30 +3,30 @@
 import LoginPage from "./Login.cy"
 import MainPage from "./MainPage.cy";
 
-const loginObj = new LoginPage();
-const mainObj = new MainPage();
+const loginPage = new LoginPage();
+const mainPage = new MainPage();
 
 describe('Testing main page for bank account', () => {
   beforeEach(() => {
-  mainObj.visit()
-  mainObj.checkElements()
+  mainPage.visit()
+  mainPage.checkAllElements()
   }) 
 
   it('This is test for js account', () => {
-    loginObj.addCredential('js', '1111')
-    loginObj.checkWelcomeMessage('Jonas')
-    loginObj.checkUserBalance('25 952,59 €')
+    loginPage.addCredential('js', '1111')
+    mainPage.checkWelcomeMessage('Jonas')
+    mainPage.checkUserBalance('25 952,59 €')
     })
 
   it('This is test for jd account', () => {
-    loginObj.addCredential('jd', '2222')
-    loginObj.checkWelcomeMessage('Jessica')
-    loginObj.checkUserBalance('$11,720.00')
+    loginPage.addCredential('jd', '2222')
+    mainPage.checkWelcomeMessage('Jessica')
+    mainPage.checkUserBalance('$11,720.00')
     })
 
   it('This is test for th account', () => {
-    loginObj.addCredential('th', '3333')
-    loginObj.checkWelcomeMessage('Tom')
-    loginObj.checkUserBalance('5 000,00 ₽')
+    loginPage.addCredential('th', '3333')
+    mainPage.checkWelcomeMessage('Tom')
+    mainPage.checkUserBalance('5 000,00 ₽')
     })    
 })
