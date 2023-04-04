@@ -6,7 +6,7 @@ import MainPage from "./MainPage.cy";
 const loginPage = new LoginPage();
 const mainPage = new MainPage();
 
-describe('Testing main page for bank account', () => {
+describe('Testing main page for application bank account', () => {
   beforeEach(() => {
     cy.visit('/')   
   })

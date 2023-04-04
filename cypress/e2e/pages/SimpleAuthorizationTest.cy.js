@@ -11,21 +11,21 @@ describe('Testing main page for bank account', () => {
     cy.visit('/')   
   })
 
-  it('This is test for js account', () => {
+  it('This is test for check account Jonas', () => {
     loginPage.addCredential('js', '1111')
     mainPage.checkWelcomeMessage('Jonas')
-    mainPage.checkUserBalance('25 952,59 €')
+    mainPage.checkUserBalance('993,50 €')
     })
 
-  it('This is test for jd account', () => {
+  it('This is test for check account Jessica', () => {
     loginPage.addCredential('jd', '2222')
     mainPage.checkWelcomeMessage('Jessica')
-    mainPage.checkUserBalance('$11,720.00')
+    mainPage.checkUserBalance('$4,850')
     })
 
-  it('This is test for th account', () => {
+  it('This is test for check account Tom', () => {
     loginPage.addCredential('th', '3333')
     mainPage.checkWelcomeMessage('Tom')
-    mainPage.checkUserBalance('5 000,00 ₽')
+    mainPage.checkUserBalance('4 700,00 ₽')
     })    
 })

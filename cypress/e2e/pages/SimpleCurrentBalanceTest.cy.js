@@ -11,7 +11,7 @@ describe('Testing main page for bank account', () => {
     mainPage.visit('/')
   })
 
-  it('This is test for js account', () => {
+  it('This is test for check account Jonas, check balance and movements', () => {
     loginPage.addCredential('js', '1111')
     mainPage.checkWelcomeMessage('Jonas')
     mainPage.checkUserBalance('993,50 €')
@@ -19,7 +19,7 @@ describe('Testing main page for bank account', () => {
     mainPage.checkMovementsBalanceOnMainPage(2)
     })
 
-  it('This is test for jd account', () => {
+  it('This is test for check account Jessica, check balance and movements', () => {
     loginPage.addCredential('jd', '2222')
     mainPage.checkWelcomeMessage('Jessica')
     mainPage.checkUserBalance('$4,850')
@@ -27,7 +27,7 @@ describe('Testing main page for bank account', () => {
     mainPage.checkMovementsBalanceOnMainPage(2)
     })
 
-  it('This is test for th account', () => {
+  it('This is test for check account Tom, check balance and movements', () => {
     loginPage.addCredential('th', '3333')
     mainPage.checkWelcomeMessage('Tom')
     mainPage.checkUserBalance('4 700,00 ₽')
