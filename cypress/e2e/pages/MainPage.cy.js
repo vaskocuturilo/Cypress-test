@@ -31,6 +31,16 @@ checkUserBalance(value) {
   return this.elements.balance().should('be.visible').contains(value);
   }
 
+checkUserMovements(deposit, withdrawal) {
+  this.elements
+  .movements()
+  .find('.movements__value').first().invoke('text').should('contain', deposit);
+
+  this.elements
+  .movements()
+  .find('.movements__value').eq(1).invoke('text').should('contain', withdrawal);
+}
+
 checkMovementsBalanceOnMainPage(length) {
   return this.elements
   .movements()
