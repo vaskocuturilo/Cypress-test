@@ -13,6 +13,6 @@ describe('Testing main page for bank account', () => {
   
   it ('This is simple test for check main page', ()=>{
     mainPage.visit()
-    mainPage.checkAllElements()
+    mainPage.checkMainPageElementsBeforeAuthorization()
   })
 }) 

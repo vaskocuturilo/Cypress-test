@@ -7,21 +7,37 @@ class LoginPage {
   }
 
   enterUsername(username) {
-    this.elements.usernameInput().type(username);
+    this.elements
+    .usernameInput()
+    .clear()
+    .type(username);
+
+    return this;
   }
 
   enterPassword(password) {
-    this.elements.passwordInput().type(password);
+    this.elements
+    .passwordInput()
+    .clear()
+    .type(password);
+
+    return this;
   }
 
   tapLoginButton() {
-    this.elements.loginButton().click();
+    this.elements
+    .loginButton()
+    .click();
+
+    return this;
   }
 
   addCredential(username, password) {
    this.enterUsername(username);
    this.enterPassword(password);
    this.tapLoginButton();
+
+   return this;
   }
 }
 

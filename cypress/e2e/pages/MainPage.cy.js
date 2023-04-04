@@ -6,7 +6,7 @@ class MainPage {
     userInput: () => cy.get('[placeholder="user"]'),
     passwordInput : () => cy.get('[placeholder="PIN"]').should('be.visible'),
     loginButton: () => cy.get('[class="login__btn"]').should('be.visible'),
-    welcomeText : () => cy.get('[class="welcome"]'),
+    welcomeText : () => cy.get('.welcome'),
     balance : () => cy.get('.balance__value'),
     movements : () => cy.get('.movements')   
 } 
@@ -15,7 +15,8 @@ visit() {
   cy.visit('/')
 }
 
-checkAllElements() {
+checkMainPageElementsBeforeAuthorization() {
+    this.elements.welcomeText().should('be.visible').and('contain', 'Log in to get started') 
     this.elements.title().should('eq', 'Bankist');
     this.elements.userInput().should('be.visible');
     this.elements.passwordInput().should('be.visible');
