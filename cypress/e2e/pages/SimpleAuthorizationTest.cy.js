@@ -8,9 +8,8 @@ const mainPage = new MainPage();
 
 describe('Testing main page for bank account', () => {
   beforeEach(() => {
-  mainPage.visit()
-  mainPage.checkAllElements()
-  }) 
+    cy.visit('/')   
+  })
 
   it('This is test for js account', () => {
     loginPage.addCredential('js', '1111')
