@@ -7,11 +7,12 @@ class MainPage {
     passwordInput : () => cy.get('[placeholder="PIN"]').should('be.visible'),
     loginButton: () => cy.get('[class="login__btn"]').should('be.visible'),
     welcomeText : () => cy.get('[class="welcome"]'),
-    balance : () => cy.get('.balance__value')  
+    balance : () => cy.get('.balance__value'),
+    movements : () => cy.get('.movements')   
 } 
 
 visit() {
-  cy.visit("/")
+  cy.visit('/')
 }
 
 checkAllElements() {
@@ -22,12 +23,19 @@ checkAllElements() {
  }
 
  checkWelcomeMessage(name) { 
-    return this.elements.welcomeText().should('contain', `Welcome back, ${name}`)
+    return this.elements.welcomeText().should('contain', `Welcome back, ${name}`);
 }
 
 checkUserBalance(value) {
-  return this.elements.balance().should('be.visible').contains(value)
-}
+  return this.elements.balance().should('be.visible').contains(value);
+  }
+
+checkMovementsBalanceOnMainPage(length) {
+  return this.elements
+  .movements()
+  .find('.movements__row')
+  .should('have.length', length);
+ }  
 }
 
 export default MainPage;
