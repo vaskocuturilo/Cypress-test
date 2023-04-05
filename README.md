@@ -40,7 +40,7 @@ You will need the following technologies available to try it out:
 ## For local testing:
 
 1. In the terminal run 
-``` live-server```
+``` live-server``` (before: npm install live-server)
 
 2.``` npx cypress run```
 
