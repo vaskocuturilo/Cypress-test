@@ -37,13 +37,13 @@ You will need the following technologies available to try it out:
  
  ### Ho w to run.
 
-#For local testing:
+##For local testing:
 
 1. In the terminal run 
 ``` live-server```
 2.``` npx cypress run```
 
-#For prod testing:
+##For prod testing:
 1.``` npx cypress run --config baseUrl="http://test-engineer.online/"```
 
 
