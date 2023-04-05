@@ -32,7 +32,7 @@ You will need the following technologies available to try it out:
 - Create automation scripts for testing timing page. 
 - Create automation scipts for tersing sort functionality.
 - Create docker compose.
-- Create github actions file.
+- Create github actions file. :heavy_check_mark:
  
 
 
