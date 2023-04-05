@@ -34,5 +34,16 @@ You will need the following technologies available to try it out:
 - Create docker compose.
 - Create github actions file. :heavy_check_mark:
  
+ 
+ ### Ho w to run.
+
+#For local testing:
+
+1. In the terminal run 
+``` live-server```
+2.``` npx cypress run```
+
+#For prod testing:
+1.``` npx cypress run --config baseUrl="http://test-engineer.online/"```
 
 
