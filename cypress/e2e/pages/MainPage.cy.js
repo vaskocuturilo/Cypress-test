@@ -14,10 +14,6 @@ class MainPage {
     transferButton : () => cy.get('[class="form__btn form__btn--transfer"]')     
 } 
 
-visit() {
-  cy.visit('/')
-}
-
 checkMainPageElementsBeforeAuthorization() {
     this.elements.welcomeText().should('be.visible').and('contain', 'Log in to get started') 
     this.elements.title().should('eq', 'Bankist');

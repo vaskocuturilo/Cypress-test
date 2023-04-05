@@ -15,5 +15,4 @@ jobs:
      - name: Run Cypress Test
        uses: cypress-io/github-action@v4
        with:
-         command: npx cypress run --config baseUrl="http://test-engineer.online/"
-         browser: chrome
+         command: npm run cypress:run:prod
