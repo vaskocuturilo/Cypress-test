@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "cypress:run": "cypress run",
+    "live": "live-server",
+    "cypress:run:prod": "cypress run --e2e --browser chrome --env master=1",
+    "cypress:run:test": "live-server && cypress run --e2e --browser chrome",
     "cypress:open": "cypress open"
   },
   "author": "",

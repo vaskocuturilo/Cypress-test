@@ -11,8 +11,7 @@ describe('Testing main page for application bank account', () => {
     cy.visit('/')   
   })
   
-  it ('This is simple test for check main page', ()=>{
-    mainPage.visit()
+  it ('This is simple test for check main page', ()=> {
     mainPage.checkMainPageElementsBeforeAuthorization()
   })
 }) 

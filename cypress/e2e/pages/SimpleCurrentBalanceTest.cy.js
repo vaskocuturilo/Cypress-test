@@ -8,7 +8,7 @@ const mainPage = new MainPage();
 
 describe('Testing main page for bank account', () => {
   beforeEach(() => {
-    mainPage.visit('/')
+    cy.visit('/')
   })
 
   it('This is test for check account Jonas, check balance and movements', () => {

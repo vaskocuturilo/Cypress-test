@@ -5,6 +5,8 @@ Those are automation scripts for the testing bank account.
 
 ## Requirements:
 - Use any *object-oriented language*.
+- Node.js
+- live-server
 - Create back account project.
 - provide code and clear instructions how to run it.
 
@@ -40,12 +42,12 @@ You will need the following technologies available to try it out:
 ## For local testing:
 
 1. In the terminal run 
-``` live-server``` (before: npm install live-server)
+``` npm run live ```
 
-2.``` npx cypress run```
+2.``` npm run cypress:run:test ```
 
 ## For production testing:
 
-1.``` npx cypress run --config baseUrl="http://test-engineer.online/"```
+1.```cypress:run:prod ```
 
 
