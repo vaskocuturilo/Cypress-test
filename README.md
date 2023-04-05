@@ -44,7 +44,7 @@ You will need the following technologies available to try it out:
 
 2.``` npx cypress run```
 
-## For prod testing:
+## For production testing:
 
 1.``` npx cypress run --config baseUrl="http://test-engineer.online/"```
 
