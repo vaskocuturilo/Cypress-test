@@ -6,7 +6,7 @@
   "scripts": {
     "live": "live-server",
     "cypress:run:prod": "cypress run --e2e --browser chrome --env master=1",
-    "cypress:run:test": "live-server && cypress run --e2e --browser chrome",
+    "cypress:run:test": "cypress run --e2e --browser chrome",
     "cypress:open": "cypress open"
   },
   "author": "",

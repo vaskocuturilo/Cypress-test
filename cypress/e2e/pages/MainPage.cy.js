@@ -8,7 +8,7 @@ class MainPage {
     loginButton: () => cy.get('[class="login__btn"]').should('be.visible'),
     welcomeText : () => cy.get('.welcome'),
     balance : () => cy.get('.balance__value'),
-    movements : () => cy.get('.movements'),
+    movements : () => cy.get('.movements', { timeout: 20000 }),
     transferTo : () => cy.get('.form__input--to'),
     amount : () => cy.get('.form__input--amount'), 
     transferButton : () => cy.get('[class="form__btn form__btn--transfer"]')     

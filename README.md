@@ -29,7 +29,7 @@ You will need the following technologies available to try it out:
 - Create automation scripts for testing login page. :heavy_check_mark:
 - Create automation scripts for testing balance page. :heavy_check_mark:
 - Create automation scripts for testing transfer money page. :heavy_check_mark:
-- Create automation scripts for testing functionality for request loan.
+- Create automation scripts for testing functionality for request loan. :heavy_check_mark:
 - Create automation scripts for testing functionality for close account.
 - Create automation scripts for testing timing page. 
 - Create automation scipts for tersing sort functionality.
