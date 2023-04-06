@@ -6,7 +6,7 @@ import MainPage from "./MainPage.cy";
 const loginPage = new LoginPage();
 const mainPage = new MainPage();
 
-describe('Testingt transfer monet functionality.', () => {
+describe('Testingt transfer money functionality.', () => {
   beforeEach(() => {
     cy.visit('/')   
   })
@@ -29,7 +29,7 @@ describe('Testingt transfer monet functionality.', () => {
     mainPage.checkUserBalance('$4,800.00')
     })
     
-  it.only('This is test for check transfer money from Tom account', () => {
+  it('This is test for check transfer money from Tom account', () => {
     loginPage.addCredential('th', '3333');
     mainPage.checkWelcomeMessage('Tom');
     mainPage.transferMoney('jd', 50);
