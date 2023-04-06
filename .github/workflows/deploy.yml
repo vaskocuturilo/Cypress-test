@@ -15,7 +15,7 @@ jobs:
      - name: Install dependencies
        uses: cypress-io/github-action@v4
        with:
-         command: npm install
+         command: npm ci
  
      - name: Run Cypress Test
        uses: cypress-io/github-action@v4
