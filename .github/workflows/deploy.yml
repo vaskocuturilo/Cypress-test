@@ -8,16 +8,20 @@ on:
 jobs:
  Cypress-Test:
    runs-on: ubuntu-latest
-   steps:
-     - name: Checkout GitCode
-       uses: actions/checkout@v2
-  
-     - name: Setup dependencies
-       uses: actions/setup-node@v1
-       run: | 
-           npm ci — ignore-scripts
 
-     - name: Run Cypress Test
-       uses: cypress-io/github-action@v4
-       with:
+   strategy:
+      matrix:
+        node-version: [10.x, 12.x, 14.x, 15.x]
+
+   steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm ci
+      
+      - name: Run Cypress Test
+        uses: cypress-io/github-action@v4
+        with:
          command: npm run cypress:run:test   
