@@ -1,4 +1,4 @@
-class LoginPage {
+export class LoginPage {
 
   elements  = {
     usernameInput : () => cy.get('[placeholder="user"]'),
@@ -41,4 +41,4 @@ class LoginPage {
   }
 }
 
-export default LoginPage;
+export const loginPage = new LoginPage();
