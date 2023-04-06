@@ -1,7 +1,6 @@
-class MainPage {
+export class MainPage {
 
  elements = {
-
     title : () => cy.title(),
     userInput: () => cy.get('[placeholder="user"]'),
     passwordInput : () => cy.get('[placeholder="PIN"]').should('be.visible'),
@@ -45,14 +44,7 @@ checkMovementsBalanceOnMainPage(length) {
   .movements()
   .find('.movements__row')
   .should('have.length', length);
-}  
-
-transferMoney(person, total) {
-  this.elements.transferTo().clear().type(person);
-  this.elements.amount().clear().type(total);
-  this.elements.transferButton().click();
-  
   }  
 }
 
-export default MainPage;
+export const mainPage = new MainPage();

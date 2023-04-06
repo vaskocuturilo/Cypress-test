@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "live": "live-server",
+    "live": "live-server --port=8080",
     "cypress:run:prod": "cypress run --e2e --browser chrome --env master=1",
     "cypress:run:test": "cypress run --e2e --browser chrome",
     "cypress:open": "cypress open"
@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^12.9.0"
+    "cypress": "^12.9.0",
+    "live-server": "1.2.2"
   }
 }

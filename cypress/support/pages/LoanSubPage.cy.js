@@ -1,4 +1,4 @@
-class RequestLoanSubPage {
+export class LoanSubPage {
     elements = {
         loanSubPage: () => cy.get('.operation--loan'),
         loanField : () => cy.get('.operation--loan [type="number"]'),
@@ -18,4 +18,4 @@ class RequestLoanSubPage {
       }  
 }
 
-export default RequestLoanSubPage;
+export const loanSubPage = new LoanSubPage();

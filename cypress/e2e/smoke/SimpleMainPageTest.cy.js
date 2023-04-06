@@ -1,10 +1,6 @@
 /// <reference types ="cypress"/>
 
-import LoginPage from "./Login.cy"
-import MainPage from "./MainPage.cy";
-
-const loginPage = new LoginPage();
-const mainPage = new MainPage();
+import { mainPage } from "../../support/pages/MainPage.cy"
 
 describe('Testing main page for application bank account', () => {
   beforeEach(() => {

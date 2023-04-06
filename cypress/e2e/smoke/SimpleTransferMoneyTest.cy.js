@@ -1,20 +1,17 @@
 /// <reference types ="cypress"/>
-
-import LoginPage from "./Login.cy"
-import MainPage from "./MainPage.cy";
-
-const loginPage = new LoginPage();
-const mainPage = new MainPage();
+import { loginPage } from "../../support/pages/Login.cy"
+import { mainPage } from "../../support/pages/MainPage.cy"
+import { transferSubPage } from "../../support/pages/TransferSubPage.cy"
 
 describe('Testingt transfer money functionality.', () => {
   beforeEach(() => {
     cy.visit('/')   
   })
 
-  it('This is test for check transfer money from Jonas account', () => {
+  it.only('This is test for check transfer money from Jonas account', () => {
     loginPage.addCredential('js', '1111');
     mainPage.checkWelcomeMessage('Jonas');
-    mainPage.transferMoney('jd', 50);
+    transferSubPage.transferMoney('jd', 50);
     mainPage.checkMovementsBalanceOnMainPage(3)
     mainPage.checkUserMovements('-50,00 €', '1300,00 €');
     mainPage.checkUserBalance('943,50 €')
