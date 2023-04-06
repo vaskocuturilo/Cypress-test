@@ -38,14 +38,9 @@ You will need the following technologies available to try it out:
  ### Ho w to run.
 
 ## For local testing:
-
-1. In the terminal run 
-``` npm run live ```
-
-2.``` npm run cypress:run:test ```
+``` npm run cypress:run:test ```
 
 ## For production testing:
-
-1.```cypress:run:prod ```
+```cypress:run:prod ```
 
 
