@@ -11,8 +11,12 @@ jobs:
    steps:
      - name: Checkout GitCode
        uses: actions/checkout@v2
- 
+  
+    - name: Setup dependencies
+      uses: actions/setup-node@v1
+      run: npm ci — ignore-scripts
+
      - name: Run Cypress Test
        uses: cypress-io/github-action@v4
        with:
-         command: npm run cypress:run:prod
+         command: npm run cypress:run:test   
