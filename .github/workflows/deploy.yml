@@ -14,7 +14,8 @@ jobs:
   
      - name: Setup dependencies
        uses: actions/setup-node@v1
-       run: npm ci — ignore-scripts
+       run: | 
+           npm ci — ignore-scripts
 
      - name: Run Cypress Test
        uses: cypress-io/github-action@v4
