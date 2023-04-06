@@ -12,9 +12,9 @@ jobs:
      - name: Checkout GitCode
        uses: actions/checkout@v2
   
-    - name: Setup dependencies
-      uses: actions/setup-node@v1
-      run: npm ci — ignore-scripts
+     - name: Setup dependencies
+       uses: actions/setup-node@v1
+       run: npm ci — ignore-scripts
 
      - name: Run Cypress Test
        uses: cypress-io/github-action@v4
