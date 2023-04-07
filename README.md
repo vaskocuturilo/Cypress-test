@@ -43,4 +43,7 @@ You will need the following technologies available to try it out:
 ## For production testing:
 ```cypress:run:prod ```
 
+### Web sote link is 
+
+https://bank-account-cypress.netlify.app/
 

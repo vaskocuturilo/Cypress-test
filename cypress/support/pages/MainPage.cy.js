@@ -15,7 +15,7 @@ export class MainPage {
 
 checkMainPageElementsBeforeAuthorization() {
     this.elements.welcomeText().should('be.visible').and('contain', 'Log in to get started') 
-    this.elements.title().should('eq', 'Bankist');
+    this.elements.title().should('eq', 'Bank Account');
     this.elements.userInput().should('be.visible');
     this.elements.passwordInput().should('be.visible');
     this.elements.loginButton().should('be.visible');
