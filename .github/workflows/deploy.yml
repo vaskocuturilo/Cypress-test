@@ -9,10 +9,10 @@ jobs:
  Cypress-Test:
    strategy:
       matrix:
-        node-version: [15.x]
-        os: [ubuntu-latest]
+        node-version: [14.x, 15.x]
+        os: [ubuntu-latest, macos-latest]
         browser: [chrome, firefox]
-
+         
    runs-on: ${{ matrix.os }}
 
    steps:
