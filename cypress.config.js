@@ -8,7 +8,7 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       if (config.env.master) {
         return {
-          baseUrl: "http://test-engineer.online/",
+          baseUrl: "https://bank-account-cypress.netlify.app/",
           env: {
             env: "master"
           },
