@@ -7,7 +7,7 @@
     "live": "live-server --port=8080",
     "cypress:run:prod": "cypress run --e2e --browser chrome --env master=1",
     "cypress:run:local": "cypress run --e2e --browser chrome",
-    "cypress:run:test": "live-server --port=8080 & cypress run --e2e --browser chrome",
+    "cypress:run:test": "live-server --port=8080 & cypress run --e2e",
     "cypress:open": "cypress open"
   },
   "author": "",
