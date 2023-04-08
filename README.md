@@ -48,3 +48,7 @@ You will need the following technologies available to try it out:
 
 https://bank-account-cypress.netlify.app/
 
+### How it looks
+
+![](https://i.postimg.cc/PJRxLm5L/c9b2bfa9-b568-4c50-80f4-f97ea1f2b8bf.png)
+
