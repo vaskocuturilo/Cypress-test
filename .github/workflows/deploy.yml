@@ -1,4 +1,4 @@
-name: Cypress Tests for http://test-engineer.online/
+name: Cypress Tests for https://bank-account-cypress.netlify.app/
 on:
   pull_request:
     branches: [ main ]
