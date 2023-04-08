@@ -4,7 +4,7 @@ import { loginPage } from "../../support/pages/Login.cy"
 import { mainPage } from "../../support/pages/MainPage.cy"
 import { accountSubPage } from "../../support/pages/AccountSubPage.cy"
 
-describe('Testing close account', () => {
+describe('Testing close account functionality.', () => {
   beforeEach(() => {
     cy.visit('/')   
   })

@@ -33,6 +33,7 @@ You will need the following technologies available to try it out:
 - Create automation scripts for testing functionality for close account. :heavy_check_mark:
 - Create automation scipts for tersing sort functionality. :heavy_check_mark:
 - Create github actions file. :heavy_check_mark:
+- Create CI/CD functionality. :heavy_check_mark:
  
  
  ### Ho w to run.
@@ -43,7 +44,7 @@ You will need the following technologies available to try it out:
 ## For production testing:
 ```cypress:run:prod ```
 
-### Web sote link is 
+### The Web site link is 
 
 https://bank-account-cypress.netlify.app/
 

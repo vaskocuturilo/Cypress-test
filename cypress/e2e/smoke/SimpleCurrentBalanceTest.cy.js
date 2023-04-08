@@ -3,7 +3,7 @@
 import { loginPage } from "../../support/pages/Login.cy"
 import { mainPage } from "../../support/pages/MainPage.cy"
 
-describe('Testing main page for bank account', () => {
+describe('Testing current account balance.', () => {
   beforeEach(() => {
     cy.visit('/')
   })
