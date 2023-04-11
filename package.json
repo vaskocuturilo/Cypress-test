@@ -4,11 +4,9 @@
   "description": "",
   "default": "index.html",
   "scripts": {
-    "live": "live-server --port=8080",
     "cypress:run:prod": "cypress run --e2e --browser chrome --env master=1",
-    "cypress:run:local": "cypress run --e2e --browser chrome",
-    "cypress:run:test": "parcel src/index.html & cypress run --e2e",
-    "cypress:open": "cypress open",
+    "cypress:run": "cypress run --e2e",
+    "cypress:run:tests": "start-server-and-test start http://localhost:1234 cypress:run",
     "start": "parcel src/index.html",
     "build": "parcel build src/index.html --dist-dir ./dist"
   },
@@ -16,7 +14,7 @@
   "license": "ISC",
   "devDependencies": {
     "cypress": "^12.9.0",
-    "live-server": "^1.2.1",
-    "parcel": "^2.8.3"
+    "parcel": "^2.8.3",
+    "start-server-and-test": "^2.0.0"
   }
 }
