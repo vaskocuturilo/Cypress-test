@@ -6,8 +6,8 @@ Those are automation scripts for the testing bank account.
 ## Requirements:
 - Use any *object-oriented language*.
 - Node.js
-- live-server
-- Create back account project.
+- Parcel.
+- Create bank account project.
 - provide code and clear instructions how to run it.
 
 **Note**: please put your code in public repository.
