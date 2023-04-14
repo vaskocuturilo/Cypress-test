@@ -284,6 +284,8 @@ btnLogin.addEventListener("click", function (e) {
 
     // Update UI
     updateUI(currentAccount);
+  } else {
+    alert("Invalid user data");
   }
 });
 
