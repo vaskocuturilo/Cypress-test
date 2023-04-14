@@ -39,12 +39,19 @@ checkUserMovements(deposit, withdrawal) {
   .find('.movements__value').eq(1).invoke('text').should('contain', withdrawal);
 }
 
+checkAlertMessage() {
+  cy.on('window:alert',(alertMessage)=>{
+    expect(alertMessage).to.contains('Invalid user data');
+  }); 
+}
+
 checkMovementsBalanceOnMainPage(length) {
   return this.elements
   .movements()
   .find('.movements__row')
   .should('have.length', length);
-  }  
-}
+  }
+ }
+
 
 export const mainPage = new MainPage();
