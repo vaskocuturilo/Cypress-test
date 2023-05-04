@@ -23,3 +23,21 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('loginViaUi', (user) => {
+    cy.session(
+      user,
+      () => {
+        cy.visit('/')
+        cy.get('[placeholder="user"]').type(user.email);
+        cy.get('[placeholder="PIN"]').type(user.password);
+        cy.get('[class="login__btn"]').click();
+        cy.get('.welcome').contains(`Welcome back, ${user.name}`);
+      },
+      {
+        validate: () => {
+          cy.getCookie('auth_key').should('exist');
+        },
+      }
+    )
+  })
